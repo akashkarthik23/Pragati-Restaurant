@@ -1,69 +1,57 @@
-# Welcome to your Lovable project
+Rewrite the README.md of my project in a highly professional and polished way suitable for GitHub and job applications.
 
-## Project info
+Project Name: Pragati Restaurant – Digital Dining System
 
-**URL**: https://lovable.dev/projects/9e20d655-e8f2-4a0c-957e-a3a396b56b7b
+Requirements:
+- Keep the tone professional, clean, and concise
+- Make it attractive for recruiters and developers
+- Use proper Markdown formatting
+- Add relevant sections with clear headings
 
-## How can I edit this code?
+Include the following sections:
 
-There are several ways of editing your application.
+1. Project Title with a short tagline
 
-**Use Lovable**
+2. Overview
+Briefly explain what the project does in 2–3 lines
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/9e20d655-e8f2-4a0c-957e-a3a396b56b7b) and start prompting.
+3. Features
+- Table Booking System
+- Menu Browsing
+- Add to Cart functionality
+- Order Management
+- User-friendly interface
 
-Changes made via Lovable will be committed automatically to this repo.
+4. Tech Stack
+- Frontend: React, Vite, Tailwind CSS
+- Backend: (mention Node.js / your backend if used)
+- Database: MySQL
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+5. Installation & Setup
+Step-by-step commands:
+git clone <repo-link>
+cd project-folder
+npm install
 npm run dev
-```
 
-**Edit a file directly in GitHub**
+6. Usage
+Explain how users interact with the system (booking, ordering, etc.)
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+7. Folder Structure (optional but preferred)
 
-**Use GitHub Codespaces**
+8. Future Enhancements
+- Online payment integration
+- Mobile app support
+- AI-based recommendations
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+9. Author
+Your Name
 
-## What technologies are used for this project?
+10. License (optional)
 
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/9e20d655-e8f2-4a0c-957e-a3a396b56b7b) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+Important:
+- Do NOT include unnecessary emojis
+- Keep it clean and professional
+- Use bullet points where needed
+- Avoid long paragraphs
+- Make it ATS and recruiter friendly
