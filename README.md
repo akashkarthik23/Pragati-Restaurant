@@ -1,5 +1,3 @@
-Rewrite the README.md of my project in a highly professional and polished way suitable for GitHub and job applications.
-
 Project Name: Pragati Restaurant – Digital Dining System
 
 Requirements:
