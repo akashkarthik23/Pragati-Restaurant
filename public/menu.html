@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu | Pragati</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body data-nav="menu">
+    <div id="site-header-mount"></div>
+
+    <main class="pt-16">
+      <section class="page-hero">
+        <div class="page-hero__bg" style="background-image:url(https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&amp;w=2940&amp;auto=format&amp;fit=crop)"></div>
+        <div class="page-hero__dim"></div>
+        <div class="page-hero__content">
+          <h1>Our Menu</h1>
+          <p>Explore our culinary creations crafted with passion and precision</p>
+        </div>
+      </section>
+
+      <section class="py-20">
+        <div class="taj-container">
+          <div class="flex flex-col md:flex-row items-center justify-between gap-6 mb-8">
+            <h2 class="section-title mb-0">Discover Our Dishes</h2>
+            <div class="relative w-full md:w-auto" style="max-width:320px;width:100%">
+              <input type="search" id="menu-search" class="form-input" placeholder="Search our menu..." style="padding-left:2.5rem" />
+              <span class="sr-only">Search</span>
+            </div>
+          </div>
+
+          <div class="flex flex-col md:flex-row gap-6 mb-8">
+            <div>
+              <h3 class="text-sm font-medium mb-3">Category</h3>
+              <div class="filter-pills">
+                <button type="button" class="pill pill--active" data-cat="all">All</button>
+                <button type="button" class="pill" data-cat="starters">Starters</button>
+                <button type="button" class="pill" data-cat="mains">Main Course</button>
+                <button type="button" class="pill" data-cat="desserts">Desserts</button>
+                <button type="button" class="pill" data-cat="sides">Sides</button>
+                <button type="button" class="pill" data-cat="beverages">Beverages</button>
+              </div>
+            </div>
+            <div>
+              <h3 class="text-sm font-medium mb-3">Dietary Preference</h3>
+              <div class="filter-pills">
+                <button type="button" class="pill pill--active" data-diet="all">All</button>
+                <button type="button" class="pill" data-diet="veg">Vegetarian</button>
+                <button type="button" class="pill" data-diet="non-veg">Non-Vegetarian</button>
+              </div>
+            </div>
+          </div>
+
+          <div id="menu-empty" class="hidden text-center py-20">
+            <h3 class="text-2xl font-serif mb-4" style="font-family:Playfair Display,serif">No dishes found</h3>
+            <p class="text-neutral-600 mb-8">Try adjusting your filters or search query.</p>
+            <button type="button" id="menu-reset" class="btn btn--primary">Reset Filters</button>
+          </div>
+
+          <div class="menu-grid" id="menu-grid"></div>
+        </div>
+      </section>
+
+      <section class="py-20 bg-neutral-900 text-white">
+        <div class="taj-container text-center">
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-serif mb-6" style="font-family:Playfair Display,serif">Ready to Experience Our Culinary Delights?</h2>
+          <p class="text-neutral-300 max-w-2xl mx-auto mb-10">
+            Join us for lunch or dinner and indulge in our chef's special creations. Book your table now.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="reservation.html" class="btn btn--primary btn--lg">Reserve a Table</a>
+            <a href="contact.html" class="btn btn--outline-white btn--lg">Contact Us</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer-mount"></div>
+    <script src="/js/layout.js" defer></script>
+    <script src="/js/cart-store.js" defer></script>
+    <script src="/js/nav.js" defer></script>
+    <script src="/js/utils.js" defer></script>
+    <script src="/js/toast.js" defer></script>
+    <script src="/js/menu-data.js" defer></script>
+    <script src="/js/menu-page.js" defer></script>
+  </body>
+</html>

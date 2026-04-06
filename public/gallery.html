@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery | Pragati</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body data-nav="gallery">
+    <div id="site-header-mount"></div>
+
+    <main class="pt-16">
+      <section class="page-hero">
+        <div class="page-hero__bg" style="background-image:url(https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&amp;w=2940&amp;auto=format&amp;fit=crop)"></div>
+        <div class="page-hero__dim"></div>
+        <div class="page-hero__content">
+          <h1>Gallery</h1>
+          <p>Explore the visual journey of culinary excellence and elegant ambiance</p>
+        </div>
+      </section>
+
+      <section class="py-20">
+        <div class="taj-container">
+          <div class="text-center mb-12">
+            <h2 class="section-title centered mx-auto">Our Visual Story</h2>
+            <p class="mt-6 text-neutral-600 max-w-3xl mx-auto">
+              Take a peek at our restaurant's ambiance, delicious food, and special events.
+            </p>
+          </div>
+          <div class="flex justify-center mb-12">
+            <div class="gallery-tabs">
+              <button type="button" class="is-active" data-gallery-cat="all">All</button>
+              <button type="button" data-gallery-cat="food">Food</button>
+              <button type="button" data-gallery-cat="ambiance">Ambiance</button>
+              <button type="button" data-gallery-cat="events">Events</button>
+            </div>
+          </div>
+          <div class="menu-grid" id="gallery-grid"></div>
+        </div>
+      </section>
+    </main>
+
+    <div id="gallery-modal" class="modal" role="dialog" aria-modal="true">
+      <button type="button" class="modal__close" id="gallery-modal-close" aria-label="Close">✕</button>
+      <div class="text-center">
+        <img id="gallery-modal-img" src="" alt="" />
+        <p class="text-white mt-4 font-serif text-lg" id="gallery-modal-cap" style="font-family:Playfair Display,serif"></p>
+      </div>
+    </div>
+
+    <div id="site-footer-mount"></div>
+    <script src="/js/layout.js" defer></script>
+    <script src="/js/cart-store.js" defer></script>
+    <script src="/js/nav.js" defer></script>
+    <script src="/js/gallery.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pragati | Fine Indian Dining — Kakinada</title>
+    <meta name="description" content="Pragati — authentic Indian cuisine on Main Road, Kakinada." />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body data-nav="home">
+    <div id="site-header-mount"></div>
+
+    <main>
+      <section class="hero" aria-label="Welcome">
+        <div class="hero__bg hero__bg--active" style="background-image:url(https://images.unsplash.com/photo-1544148103-0773bf10d330?q=80&amp;w=1920&amp;auto=format&amp;fit=crop)"></div>
+        <div class="hero__bg" style="background-image:url(https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&amp;w=1920&amp;auto=format&amp;fit=crop)"></div>
+        <div class="hero__bg" style="background-image:url(https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&amp;w=1920&amp;auto=format&amp;fit=crop)"></div>
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+          <span class="hero__badge">Fine Dining Experience</span>
+          <h1>Welcome to Pragati – A Culinary Experience Beyond Borders</h1>
+          <p class="hero__lead">
+            Indulge in an exquisite dining experience with authentic flavors, elegant ambiance, and impeccable service.
+          </p>
+          <div class="hero__actions">
+            <a href="reservation.html" class="btn btn--primary btn--lg">Book a Table</a>
+            <a href="menu.html" class="btn btn--outline-white btn--lg">Explore Menu</a>
+          </div>
+        </div>
+        <div class="hero__scroll">
+          <span>Scroll Down</span>
+          <div class="hero__scroll-line"></div>
+        </div>
+      </section>
+
+      <section class="py-20">
+        <div class="taj-container grid-2">
+          <div>
+            <span class="text-gold uppercase tracking-wider text-sm font-medium">Our Story</span>
+            <h2 class="section-title mt-2">Experience The Finest Indian Cuisine</h2>
+            <p class="text-neutral-600 mt-6">
+              At Pragati, we are passionate about bringing the authentic flavors of India to your table. Our culinary team combines traditional recipes with modern techniques.
+            </p>
+            <p class="text-neutral-600 mt-4">
+              Every dish is prepared with the freshest ingredients, aromatic spices, and a deep respect for culinary traditions that span generations.
+            </p>
+            <div class="mt-8">
+              <a href="about.html" class="btn btn--primary btn--lg">Our Story</a>
+            </div>
+          </div>
+          <div class="grid-2" style="grid-template-columns:1fr 1fr;gap:1rem">
+            <div class="image-overlay rounded-lg" style="height:200px">
+              <img src="https://images.unsplash.com/photo-1514326640560-7d063ef2aed5?q=80&amp;w=2940&amp;auto=format&amp;fit=crop" alt="Interior" class="w-full h-full object-cover" style="width:100%;height:100%;object-fit:cover" />
+            </div>
+            <div class="image-overlay rounded-lg" style="height:200px;margin-top:2rem">
+              <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&amp;w=2944&amp;auto=format&amp;fit=crop" alt="Chef" class="w-full h-full object-cover" style="width:100%;height:100%;object-fit:cover" />
+            </div>
+            <div class="image-overlay rounded-lg" style="height:200px">
+              <img src="https://images.unsplash.com/photo-1516714435131-44d6b64dc6a2?q=80&amp;w=2880&amp;auto=format&amp;fit=crop" alt="Spices" class="w-full h-full object-cover" style="width:100%;height:100%;object-fit:cover" />
+            </div>
+            <div class="image-overlay rounded-lg" style="height:200px;margin-top:-2rem">
+              <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?q=80&amp;w=2946&amp;auto=format&amp;fit=crop" alt="Table" class="w-full h-full object-cover" style="width:100%;height:100%;object-fit:cover" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-20 bg-neutral-50">
+        <div class="taj-container">
+          <div class="text-center mb-12">
+            <h2 class="section-title centered mx-auto">Our Featured Dishes</h2>
+            <p class="mt-6 text-neutral-600 max-w-3xl mx-auto">
+              Experience our chef's meticulously crafted specialties, made with premium ingredients and authentic techniques.
+            </p>
+          </div>
+          <div class="featured-track" id="featured-root"></div>
+          <div class="text-center mt-12">
+            <a href="menu.html" class="btn btn--primary btn--lg">View Full Menu</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-20 bg-neutral-950 text-white relative" style="overflow:hidden">
+        <div class="taj-container relative" style="z-index:1">
+          <div class="text-center mb-12">
+            <h2 class="section-title centered text-white mx-auto" style="color:#fff">What Our Guests Say</h2>
+          </div>
+          <div class="testimonial-area max-w-4xl mx-auto relative">
+            <button type="button" class="testimonial-nav testimonial-nav--prev" id="test-prev" aria-label="Previous">‹</button>
+            <button type="button" class="testimonial-nav testimonial-nav--next" id="test-next" aria-label="Next">›</button>
+            <div id="testimonial-slide"></div>
+            <div class="testimonial-dots" id="test-dots"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-20">
+        <div class="taj-container">
+          <div class="text-center mb-12">
+            <h2 class="section-title centered mx-auto">Visit Us</h2>
+            <p class="mt-6 text-neutral-600 max-w-3xl mx-auto">
+              We're on Main Road, Kakinada. Come experience the elegant ambiance and exceptional cuisine at Pragati.
+            </p>
+          </div>
+          <div class="grid-3">
+            <div class="card card__body shadow-lg">
+              <h3 class="font-serif text-xl mb-4" style="font-family:Playfair Display,serif">Location</h3>
+              <p class="text-neutral-600">
+                Main Road<br />Kakinada, Andhra Pradesh 533001
+              </p>
+              <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn btn--ghost btn--sm mt-4">Get Directions</a>
+            </div>
+            <div class="card card__body shadow-lg">
+              <h3 class="font-serif text-xl mb-4" style="font-family:Playfair Display,serif">Hours</h3>
+              <ul class="space-y-2 text-neutral-600" style="list-style:none;padding:0;margin:0">
+                <li class="flex justify-between"><span>Mon - Thu</span><span>12:00 - 22:00</span></li>
+                <li class="flex justify-between"><span>Fri - Sat</span><span>12:00 - 23:00</span></li>
+                <li class="flex justify-between"><span>Sunday</span><span>12:00 - 21:00</span></li>
+              </ul>
+            </div>
+            <div class="card card__body shadow-lg">
+              <h3 class="font-serif text-xl mb-4" style="font-family:Playfair Display,serif">Contact</h3>
+              <p class="text-neutral-600 mb-2">For reservations or inquiries:</p>
+              <p class="text-neutral-800 font-medium">+91 884 234 5678</p>
+              <p class="text-neutral-800 font-medium mt-1">info@pragatikakinada.in</p>
+              <a href="contact.html" class="btn btn--ghost btn--sm mt-4">Contact Us</a>
+            </div>
+          </div>
+          <div class="mt-12 rounded-lg overflow-hidden shadow-lg" style="height:400px">
+            <iframe
+              title="Map"
+              src="https://maps.google.com/maps?q=Main+Road%2C+Kakinada%2C+Andhra+Pradesh&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+              width="100%"
+              height="100%"
+              style="border:0"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-20 bg-neutral-900 text-white">
+        <div class="taj-container text-center">
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-serif mb-6" style="font-family:Playfair Display,serif">Experience The Royal Treatment</h2>
+          <p class="text-neutral-300 max-w-2xl mx-auto mb-10">
+            Join us for an unforgettable dining experience at Pragati. Book your table today and indulge in the finest Indian cuisine.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="reservation.html" class="btn btn--primary btn--lg">Reserve a Table</a>
+            <a href="contact.html" class="btn btn--outline-white btn--lg">Contact Us</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer-mount"></div>
+
+    <script src="/js/layout.js" defer></script>
+    <script src="/js/cart-store.js" defer></script>
+    <script src="/js/nav.js" defer></script>
+    <script src="/js/utils.js" defer></script>
+    <script src="/js/toast.js" defer></script>
+    <script src="/js/menu-data.js" defer></script>
+    <script src="/js/home.js" defer></script>
+  </body>
+</html>

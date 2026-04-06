@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book a Table | Pragati</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body data-nav="reservation">
+    <div id="site-header-mount"></div>
+
+    <main class="pt-16">
+      <section class="page-hero">
+        <div class="page-hero__bg" style="background-image:url(https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&amp;w=1920&amp;auto=format&amp;fit=crop)"></div>
+        <div class="page-hero__dim"></div>
+        <div class="page-hero__content">
+          <h1>Book a Table</h1>
+          <p>Reserve your dining experience at Pragati, Kakinada</p>
+        </div>
+      </section>
+
+      <section class="py-20">
+        <div class="taj-container grid-2" style="align-items:start">
+          <div>
+            <h2 class="section-title">Make a Reservation</h2>
+            <p class="text-neutral-600 mt-6 mb-8">
+              Reserve your table at Pragati for an unforgettable dining experience. Whether it's a special occasion or simply a night out, we look forward to hosting you.
+            </p>
+            <div class="bg-neutral-50 p-6 rounded-lg mb-8">
+              <h3 class="font-serif text-xl mb-4" style="font-family:Playfair Display,serif">Reservation Guidelines</h3>
+              <ul class="text-neutral-600 space-y-2" style="list-style:none;padding:0;margin:0">
+                <li>• Reservations can be made up to 30 days in advance</li>
+                <li>• For parties of 8 or more, please contact us directly</li>
+                <li>• A credit card is required for parties of 6 or more</li>
+                <li>• We hold reservations for 15 minutes past the reservation time</li>
+                <li>• For cancellations, please notify us at least 24 hours in advance</li>
+              </ul>
+            </div>
+            <div class="bg-gold-10 p-6 rounded-lg">
+              <h3 class="font-serif text-xl mb-4" style="font-family:Playfair Display,serif">Private Dining &amp; Events</h3>
+              <p class="text-neutral-600 mb-4">
+                Planning a special celebration or corporate event? Our private dining room is perfect for intimate gatherings.
+              </p>
+              <p class="text-neutral-800 font-medium">
+                Contact:
+                <a href="mailto:events@pragatikakinada.in" class="text-gold">events@pragatikakinada.in</a>
+                or
+                <a href="tel:+918842345678" class="text-gold">+91 884 234 5678</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-white p-8 rounded-lg shadow-lg">
+            <form id="reservation-form" class="space-y-6">
+              <div class="grid-2" style="gap:1rem">
+                <div class="form-group mb-0">
+                  <label class="form-label" for="res-name">Name</label>
+                  <input class="form-input" id="res-name" name="name" placeholder="Your Name" required />
+                  <p class="form-error" id="err-name"></p>
+                </div>
+                <div class="form-group mb-0">
+                  <label class="form-label" for="res-email">Email</label>
+                  <input class="form-input" id="res-email" name="email" type="email" placeholder="Your Email" required />
+                  <p class="form-error" id="err-email"></p>
+                </div>
+              </div>
+              <div class="grid-2" style="gap:1rem">
+                <div class="form-group mb-0">
+                  <label class="form-label" for="res-phone">Phone</label>
+                  <input class="form-input" id="res-phone" name="phone" placeholder="Your Phone" required />
+                  <p class="form-error" id="err-phone"></p>
+                </div>
+                <div class="form-group mb-0">
+                  <label class="form-label" for="res-guests">Guests</label>
+                  <select class="form-select" id="res-guests" name="guests" required>
+                    <option value="">Select guests</option>
+                    <option value="1">1 Guest</option>
+                    <option value="2">2 Guests</option>
+                    <option value="3">3 Guests</option>
+                    <option value="4">4 Guests</option>
+                    <option value="5">5 Guests</option>
+                    <option value="6">6 Guests</option>
+                    <option value="7">7 Guests</option>
+                    <option value="8">8 Guests</option>
+                  </select>
+                  <p class="form-error" id="err-guests"></p>
+                </div>
+              </div>
+              <div class="grid-2" style="gap:1rem">
+                <div class="form-group mb-0">
+                  <label class="form-label" for="res-date">Date</label>
+                  <input class="form-input" id="res-date" name="date" type="date" required />
+                  <p class="form-error" id="err-date"></p>
+                </div>
+                <div class="form-group mb-0">
+                  <label class="form-label" for="res-time">Time</label>
+                  <select class="form-select" id="res-time" name="time" required></select>
+                  <p class="form-error" id="err-time"></p>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="res-message">Message (optional)</label>
+                <textarea class="form-textarea" id="res-message" name="message" rows="3" placeholder="Special requests"></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary btn--lg">Book Now</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-20 bg-neutral-50">
+        <div class="taj-container">
+          <h2 class="section-title centered text-center mx-auto mb-12" style="display:block;text-align:center">Restaurant Information</h2>
+          <div class="grid-3">
+            <div class="card card__body">
+              <h3 class="font-serif text-xl mb-4" style="font-family:Playfair Display,serif">Hours</h3>
+              <ul class="text-neutral-600" style="list-style:none;padding:0;margin:0">
+                <li class="flex justify-between mb-2"><span>Mon - Thu</span><span>12:00 - 22:00</span></li>
+                <li class="flex justify-between mb-2"><span>Fri - Sat</span><span>12:00 - 23:00</span></li>
+                <li class="flex justify-between"><span>Sunday</span><span>12:00 - 21:00</span></li>
+              </ul>
+              <p class="mt-4 text-sm text-neutral-500">Last seating is 1 hour before closing</p>
+            </div>
+            <div class="card card__body">
+              <h3 class="font-serif text-xl mb-4" style="font-family:Playfair Display,serif">Location</h3>
+              <p class="text-neutral-600 mb-4">Main Road<br />Kakinada, Andhra Pradesh 533001<br />India</p>
+              <p class="text-neutral-600 text-sm">Complimentary valet parking. 5 min from Downtown Metro.</p>
+            </div>
+            <div class="card card__body">
+              <h3 class="font-serif text-xl mb-4" style="font-family:Playfair Display,serif">More Info</h3>
+              <ul class="text-neutral-600 text-sm space-y-2" style="list-style:none;padding:0;margin:0">
+                <li>• Smart casual dress code</li>
+                <li>• Wheelchair accessible</li>
+                <li>• Dietary restrictions — tell us when booking</li>
+                <li>• Children's menu available</li>
+                <li>• Free Wi-Fi</li>
+                <li>• Major cards accepted</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer-mount"></div>
+    <script src="/js/layout.js" defer></script>
+    <script src="/js/cart-store.js" defer></script>
+    <script src="/js/nav.js" defer></script>
+    <script src="/js/toast.js" defer></script>
+    <script src="/js/api.js" defer></script>
+    <script src="/js/reservation.js" defer></script>
+  </body>
+</html>
