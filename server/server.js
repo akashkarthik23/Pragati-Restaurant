@@ -231,6 +231,4 @@ app.delete("/reservation/:id", async (req, res) => {
 /* ---------- Static site ---------- */
 app.use(express.static(publicDir));
 
-app.listen(PORT, () => {
-  console.log(`Pragati server: http://localhost:${PORT}`);
-});
+module.exports = app;
