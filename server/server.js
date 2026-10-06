@@ -227,7 +227,6 @@ app.delete("/reservation/:id", async (req, res) => {
     res.status(500).json({ error: "Could not delete reservation" });
   }
 });
-
 /* ---------- Static site ---------- */
 app.use(express.static(publicDir));
 
